@@ -1,0 +1,13 @@
+body {background-color:#00bfff;}
+
+#heading {width:100% ; height:30px ; text-align:center ; font-size:50px ;background-color:grey;}
+
+#A{
+background-color:grey;
+padding: 10px;
+font-size: 20px;
+}
+footer{ 
+clear: left; /* starts the footer below the floated content */ 
+height:25px; 
+background:grey;padding: 15px; }

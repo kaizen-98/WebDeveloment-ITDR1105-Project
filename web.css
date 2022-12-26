@@ -1,0 +1,43 @@
+body{
+	background-color:#5858FA;
+	
+	
+}
+.hotls{
+	background-color:#6E6E6E;
+	margin-left:10px;
+	margin-right:60%;
+	padding-right:40px;
+	padding-left:40px;
+	font-family:"Times New Roman" Times;	
+}
+.Flyboard{
+	background-color:#6E6E6E;	
+	position:absolute;
+	margin-left:10px;
+	margin-right:60%;
+	padding-right:40px;
+	padding-left:40px;
+	font-family:"Times New Roman" Times;
+	 top: 36%; 
+	right: 5%;
+	left:60%;
+	width: 30%; 
+	height:95%;
+	margin-bottom:45px;
+}
+.Cars{
+    background-color:#6E6E6E;
+	margin-left:10px;
+	margin-right:60%;
+	padding-right:40px;
+	padding-left:40px;
+	font-family:"Times New Roman" Times;
+	
+	
+	
+	
+	
+	
+	
+}

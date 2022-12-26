@@ -1,0 +1,129 @@
+<Doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Ammar.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#ppo").mouseenter(function(){
+        alert("IF YOU HAVE ANY QUESTION PLEASE CONTACT US!");
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+    });
+});
+
+//jquery selector 'p selector'
+</script>
+<style>
+
+.dropbtn {
+    background-color: #FFF;
+    color: #000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+ul > :first-child {
+    background-color: #CCC;
+	background-size:contain;
+	
+}
+</style>
+<title>Personl Information</title>
+</head>
+
+<body>
+<div class="dropdown">
+  <button class="dropbtn">WELCOME AAM WEBSITE</button>
+  <div class="dropdown-content">
+    <a href="homepage2.html">World of car</a>
+    <a href="page1.html">Overview</a>
+    <a href="page2.html">Itinerary&location</a>
+    <a href="page3.html">Booking</a>
+    <a href="us.html">About Us</a>
+    
+  </div>
+</div>
+<h1 id="h1"  class="w3-container w3-center w3-animate-top">Personal Informations</h1>
+<hr>
+<p id="p"> AAM company </p>
+
+<br>
+
+
+<button>Hide company name</button>
+
+<ul style="width:450;height:155;">
+  <li>We do business .</li>
+  <li id="ppo">Phone number : 96955729/95477555</li>
+    <li>Ammar/Abdul Majid/Mohammed</li>
+</ul>
+<hr>
+<br><br>&nbsp;&nbsp;&nbsp;
+<img id="scream" width="220" height="277" src="333.jpg">
+
+
+<canvas id="myCanvas" width="240" height="297"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+
+<script>
+window.onload = function() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("scream");
+   ctx.drawImage(img, 10, 10);
+   
+
+
+
+   };
+</script>
+
+<img id="scream2" width="220" height="277" src="bus.jpg">
+
+
+
+
+<hr>
+
+<br>
+</body>
+</html>

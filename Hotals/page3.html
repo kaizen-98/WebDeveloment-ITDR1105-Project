@@ -1,0 +1,131 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Ammar.css">
+
+<title>booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ <script src="jquery.min.js"></script>
+<script type="text/javascript" src="js/registration.js"></script>
+<style>
+.dropbtn {
+    background-color: #FFF;
+    color: #000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+ul > :first-child {
+    background-color: #CCC;
+	background-size:contain;
+}
+</style>
+</head>
+<body>
+<div class="dropdown">
+  <button class="dropbtn">WELCOME TO AAM WEBSITE</button>
+  <div class="dropdown-content">
+    <a href="homepage2.html">World of hotels</a>
+    <a href="page1.html">Overview</a>
+    <a href="page3.html">Booking</a>
+    <a href="us.html">About Us</a>
+    
+  </div>
+</div>
+<img src="hh.jpg" alt="2" width="1350" height="230"><br>
+
+
+<br><br>
+<fieldset>
+<legend><h2>Booking:</h2></legend>
+    Name:<br> <input type="text" name="name" id="name" style="width:200;height:25;background:#FFF" required><br />
+               <font color="red"> <span id="nameerror" ></span></font><br />
+    Phone number:<br> <input type="text" name="phone" id="phone" style="width:200;height:25;background:#FFF" required><br />
+               <font color="red"> <span id="phoneerror"></span></font><br />
+    Date :<br> <input type="date" name="tdate" id="tdate" style="width:200;height:25;background:#FFF" required><br />
+               <font color="red"> <span id="dateerror"></span></font><br />
+ 
+
+</form>
+                
+                 <input type="submit" name="submit" id="submit" class="button" value="Submit"  onClick="return validate(this);" />
+
+
+</fieldset>
+
+
+</html>
+<script>
+$(document).ready(function() {
+$("#submit").click(function() {
+var name = $("#name").val();
+var phone = $("#phone").val();
+var tdate = $("#tdate").val();
+var ticket = $("#a").val();
+
+
+if (name == '' ) {
+alert("Please Enter Your Name");
+} else if
+(phone == '' ) {
+
+alert("Please Enter Your Phone NO.");
+}
+else if ((phone.length) < 8) {
+alert("Phone NO. should  8 number!");
+}
+
+else if ((phone.length) > 8) {
+alert("Phone NO. should  8 number!");
+} 
+else if
+(tdate == '' ) {
+
+alert("Please Enter Date");
+}
+
+
+else if
+(ticket == '' ) {
+
+alert("Please Enter NO of days");
+}
+
+
+else  {
+
+alert("Thank You For Booking");
+}
+
+});
+});
+
+</script>

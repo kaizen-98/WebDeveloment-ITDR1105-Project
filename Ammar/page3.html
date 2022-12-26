@@ -1,0 +1,187 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Ammar.css">
+
+<title>booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ <script src="jquery.min.js"></script>
+<script type="text/javascript" src="js/registration.js"></script>
+<style>
+.dropbtn {
+    background-color: #FFF;
+    color: #000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+ul > :first-child {
+    background-color: #CCC;
+	background-size:contain;
+}
+</style>
+</head>
+<body>
+<div class="dropdown">
+  <button class="dropbtn">WELCOME TO AL MOUJ WEBSITE</button>
+  <div class="dropdown-content">
+    <a href="homepage2.html">World of Adventure</a>
+    <a href="page1.html">Overview</a>
+    <a href="page2.html">Itinerary&location</a>
+    <a href="page3.html">Booking</a>
+    <a href="us.html">About Us</a>
+    
+  </div>
+</div>
+<img src="hh.jpg" alt="2" width="1350" height="230"><br>
+
+<h2  class="w3-container w3-center w3-animate-top">What's Included</h2>
+
+<ul>
+  <li>Helmet</li>
+  <li>Life jacket</li>
+  <li>Professional instructor</li>
+</ul>  
+<br>
+
+
+<h2>What's Not Included</h2>
+
+<ul>
+  <li>Wet suit / swimming gear</li>
+  <li>Sunscreen lotion</li>
+  <li>Snacks and water</li>
+</ul> 
+<br><br>
+<hr>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+
+
+<table style="width:40%">
+  <caption>Offers</caption>
+  <tr>
+    <th>Number of Players</th>
+    <th>Offer price</th>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>75 OMR</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>50 OMR</td>
+  </tr>
+</table>
+<hr>
+
+
+<br><br>
+<fieldset>
+<legend><h2>Booking:</h2></legend>
+    Name:<br> <input type="text" name="name" id="name" style="width:200;height:25;background:#FFF" required><br />
+               <font color="red"> <span id="nameerror" ></span></font><br />
+    Phone number:<br> <input type="text" name="phone" id="phone" style="width:200;height:25;background:#FFF" required><br />
+               <font color="red"> <span id="phoneerror"></span></font><br />
+    Date :<br> <input type="date" name="tdate" id="tdate" style="width:200;height:25;background:#FFF" required><br />
+               <font color="red"> <span id="dateerror"></span></font><br />
+ Price:<br><input type="text" name="price" id="price" value="25 OMR" readonly style="background:#CCC" required><br><br>
+
+              
+  <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+ NO. OF Tickets: <br /><input type="number" name="a" id="a" style="width:200;height:25;background:#FFF" required><br>
+<font color="red"> <span id="terror"></span></font><br />
+ 
+<input type="number" id="b" value="25" hidden="hidden"> <br />
+Total Price <output name="x" for="a b"></output> OMR 
+</form>
+                
+                 <input type="submit" name="submit" id="submit" class="button" value="Submit"  onClick="return validate(this);" />
+
+
+</fieldset>
+
+
+</html>
+<script>
+$(document).ready(function() {
+$("#submit").click(function() {
+var name = $("#name").val();
+var phone = $("#phone").val();
+var tdate = $("#tdate").val();
+var ticket = $("#a").val();
+
+
+if (name == '' ) {
+alert("Please Enter Your Name");
+} else if
+(phone == '' ) {
+
+alert("Please Enter Your Phone NO.");
+}
+else if ((phone.length) < 8) {
+alert("Phone NO. should  8 number!");
+}
+
+else if ((phone.length) > 8) {
+alert("Phone NO. should  8 number!");
+} 
+else if
+(tdate == '' ) {
+
+alert("Please Enter Date");
+}
+
+
+else if
+(ticket == '' ) {
+
+alert("Please Enter NO of Tickets");
+}
+
+
+else  {
+
+alert("Thank You For Booking");
+}
+
+});
+});
+
+</script>
